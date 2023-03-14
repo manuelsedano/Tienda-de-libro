@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ventas</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Ventas</title>
+</head>
+<body>
+<!--inicio de encabezado-->
+<header id="encabezado">
+    <nav id="header-nav" >
+        <div >
+            <div >
+                <div class="navbar-brand">
+                    <a href="index.html" id="Titulo"><h1>Libraton</h1></a>
+                    <img src="imagenes/logo.png" alt="Todo sobre libros" id="Logo" onclick="location.href='index.html'">
+
+                </div>
+
+                <input type="text" name="busqueda" placeholder="Buscar" id="Buscador">
+                <img src="imagenes/lupa.png" onclick="" id="lupa">
+
+                <div id="Paginas">
+                    <a href="Usuario.html">Usuario</a>
+                    <a href="Carrito.html">Carrito</a>
+                    <a href="Seguimiento.html">Seguimiento</a>
+                    <a href="Proveedores.html">Proveedores</a>
+                </div>
+
+                <img src="imagenes/usuario.png"  onclick="location.href='Login.html'" id="usuario">
+            </div>
+
+
+        </div><!-- .container -->
+    </nav><!-- #header-nav -->
+</header>
+<!--final de encabezado-->
+
+<!--inicio de pagina-->
+
+
+<!--articulo-->
+<div class="articulo">
+    <div class="imagen">
+        <img src="imagenes/cienaños.jpg">
+    </div>
+
+    <div class="informacion">
+        <h2>Cien años de soledad</h2>
+        <p>Cien años de soledad es una novela del escritor colombiano Gabriel García Márquez, ganador del Premio Nobel de Literatura en 1982. Es considerada
+            una obra maestra de la literatura hispanoamericana y universal, así como una de las obras más traducidas y leídas en español.​</p>
+        <p>Autor: Gabriel García Márquez</p>
+        <p>Editorial: Diana México</p>
+        <p>ISBN-10: 6070728793</p>
+        <p>ISBN-13: 978-6070728792</p>
+        <h3>$500</h3>
+
+        <form action="" method="post">
+            <label for="Cantidad">Cantidad</label>
+            <input type="number" name="Cantidad"  value="1" required id="cantidad"/>
+            <br>
+            <input type="submit" value="Agregar al carrito" name="Bot1" class="entrada" onclick="location.href='Compra.html'"/>
+        </form>
+    </div>
+
+</div>
+
+<!--fin articulo-->
+
+<!-- Sugerencias -->
+<div id="sugerencias">
+    <h3>Libros sugeridos</h3>
+    <article class="Libro" onclick="location.href='Venta.html'" >
+        <img src="imagenes/cienaños.jpg">
+        <p>Cien años de soledad</p>
+        <h3>$500</h3>
+    </article>
+    <article class="Libro" onclick="location.href='Venta.html'" >
+        <img src="imagenes/cienaños.jpg">
+        <p>Cien años de soledad</p>
+        <h3>$500</h3>
+    </article>
+    <article class="Libro" onclick="location.href='Venta.html'" >
+        <img src="imagenes/cienaños.jpg">
+        <p>Cien años de soledad</p>
+        <h3>$500</h3>
+    </article>
+    <article class="Libro" onclick="location.href='Venta.html'" >
+        <img src="imagenes/cienaños.jpg">
+        <p>Cien años de soledad</p>
+        <h3>$500</h3>
+    </article>
+    <article class="Libro" onclick="location.href='Venta.html'" >
+        <img src="imagenes/cienaños.jpg">
+        <p>Cien años de soledad</p>
+        <h3>$500</h3>
+    </article>
+</div>
+<!-- fin Sugerencias -->
+
+
+<footer class="panel-footer" id="pie">
+    <p>copyright Daniel Alejandro Negrete Gomez 2022</p>
+</footer>
+
+
+</body>
+</html>

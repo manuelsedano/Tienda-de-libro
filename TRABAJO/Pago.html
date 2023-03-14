@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Pago</title>
+</head>
+<body>
+
+<!--inicio de encabezado-->
+<header id="encabezado">
+    <nav id="header-nav" >
+        <div >
+            <div >
+                <div class="navbar-brand">
+                    <a href="index.html" id="Titulo"><h1>Libraton</h1></a>
+                    <img src="imagenes/logo.png" alt="Todo sobre libros" id="Logo" onclick="location.href='index.html'">
+
+                </div>
+
+                <input type="text" name="busqueda" placeholder="Buscar" id="Buscador">
+                <img src="imagenes/lupa.png" onclick="" id="lupa">
+
+                <div id="Paginas">
+                    <a href="Usuario.html">Usuario</a>
+                    <a href="Carrito.html">Carrito</a>
+                    <a href="Seguimiento.html">Seguimiento</a>
+                    <a href="Proveedores.html">Proveedores</a>
+                </div>
+
+                <img src="imagenes/usuario.png"  onclick="location.href='Login.html'" id="usuario">
+            </div>
+
+
+        </div><!-- .container -->
+    </nav><!-- #header-nav -->
+</header>
+<!--final de encabezado-->
+
+<!-- Pago -->
+
+<div class="Pantalla">
+    <form action="" method="post" class="formularios">
+        <div>
+            <label for="NTargeta">Numero de targeta</label>
+            <br>
+            <input type="number" name="NTargeta" placeholder="741829630"  required />
+        </div>
+
+        <div>
+            <label for="Nombre">Nombre en la targeta</label>
+            <br>
+            <input type="text" name="Nombre" placeholder="Juan Perez"  required />
+        </div>
+
+
+        <div>
+            <label for="Fecha">Fecha de vencimiento</label>
+            <br>
+            <input type="month" name="Mes" placeholder="12/2022"  required />
+        </div>
+
+        <div id="Boton">
+            <input type="submit" value="Confirmar Targeta" name="Bot1" class="entrada" onclick="window.alert('Envio confirmado'); location.href='index.html'"/>
+        </div>
+
+    </form>
+
+    <div>
+        <h3>Targetas aceptadas</h3>
+        <img src="imagenes/Targetas.png">
+    </div>
+</div>
+
+<!-- Fin de Pago-->
+
+<footer class="panel-footer" id="pie">
+    <p>copyright Daniel Alejandro Negrete Gomez 2022</p>
+</footer>
+
+</body>
+</html>

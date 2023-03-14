@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Compras</title>
+</head>
+<body>
+
+<!--inicio de encabezado-->
+<header id="encabezado">
+    <nav id="header-nav" >
+        <div >
+            <div >
+                <div class="navbar-brand">
+                    <a href="index.html" id="Titulo"><h1>Libraton</h1></a>
+                    <img src="imagenes/logo.png" alt="Todo sobre libros" id="Logo" onclick="location.href='index.html'">
+
+                </div>
+
+                <input type="text" name="busqueda" placeholder="Buscar" id="Buscador">
+                <img src="imagenes/lupa.png" onclick="" id="lupa">
+
+                <div id="Paginas">
+                    <a href="Usuario.html">Usuario</a>
+                    <a href="Carrito.html">Carrito</a>
+                    <a href="Seguimiento.html">Seguimiento</a>
+                    <a href="Proveedores.html">Proveedores</a>
+                </div>
+
+                <img src="imagenes/usuario.png"  onclick="location.href='Login.html'" id="usuario">
+            </div>
+
+
+        </div><!-- .container -->
+    </nav><!-- #header-nav -->
+</header>
+<!--final de encabezado-->
+
+<div id="Pantalla">
+
+    <form action="" method="post" class="formularios">
+
+        <div>
+            <h3>Direccion de entrega</h3>
+
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre"  value="Daniel Negrete" required />
+
+            <label for="Direccion">Calle y numero</label>
+            <input type="text" name="Direccion"  placeholder="Juarez 580" required />
+
+            <label for="CP">Codigo postal</label>
+            <input type="number" name="CP" placeholder="45580"  required />
+
+            <label for="coment">Comentarios de entrega</label>
+            <input type="coment" name="coment" placeholder="Color de casa cafe"  required  id="comentario"/>
+        </div>
+
+        <div id="paqueterias">
+            <h3>Paqueteria</h3>
+
+            <div>
+                <label for="DHL">DHL</label>
+                <input type="checkbox" name="DHL" required >
+            </div>
+            <img src="imagenes/DHL.jpg">
+
+            <div>
+                <label for="Fedex">Fedex</label>
+                <input type="checkbox" name="Fedex" required >
+            </div>
+            <img src="imagenes/Fedex.png">
+
+            <div>
+                <label for="UPS">UPS</label>
+                <input type="checkbox" name="UPS" required >
+            </div>
+            <img src="imagenes/UPS.png">
+        </div>
+
+        <div id="Boton">
+            <input type="submit" value="Confirmar envio" name="Bot1" class="entrada" onclick="location.href='Pago.html'"/>
+        </div>
+
+    </form>
+
+
+</div>
+
+
+<footer class="panel-footer" id="pie">
+    <p>copyright Daniel Alejandro Negrete Gomez 2022</p>
+</footer>
+
+</body>
+</html>
